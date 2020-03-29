@@ -1,23 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
+/** @jsx jsx */
+import { jsx } from '@emotion/core';
+import logo from './headshot.jpg';
+import styles from './styles';
 
 export function HomePage() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div css={styles.container}>
+            <div css={styles.bio}>
+                <img src={logo} css={styles.headshot} alt="logo" />
+                <p>
+                    Edit <code>src/App.js</code> and save to reload.
+                </p>
+            </div>
+        </div>
+    );
 }
