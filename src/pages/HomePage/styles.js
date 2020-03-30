@@ -1,6 +1,6 @@
 const styles = {
     container: {
-        backgroundColor: '#262626',
+        backgroundColor: '#00808080', // teal with 50% opacity
         height: '100vh',
         width: '100%',
         display: 'flex',
@@ -11,9 +11,8 @@ const styles = {
         height: '30vmin',
         maxHeight: '320px',
         borderRadius: '50%',
-        border: '4px solid white',
-        padding: '5px',
-        '@media(max-width: 820px)': {
+        boxShadow: '0 0 15px #000000',
+        '@media(max-width: 920px)': {
             height: '50vmin'
         },
         '@media(max-width: 420px)': {
@@ -27,7 +26,7 @@ const styles = {
         alignItems: 'center',
         color: 'white',
         width: '900px',
-        '@media(max-width: 820px)': {
+        '@media(max-width: 920px)': {
             flexDirection: 'column',
             justifyContent: 'center'
         },
@@ -41,12 +40,14 @@ const styles = {
     bioText: {
         width: '500px',
         fontSize: '24px',
-        '@media(max-width: 820px)': {
-            fontSize: '4vmin'
+        '@media(max-width: 920px)': {
+            fontSize: '4vmin',
+            textAlign: 'center'
         },
         '@media(max-width: 420px)': {
             width: '100%',
-            fontSize: '5vmin'
+            fontSize: '5vmin',
+            textAlign: 'center'
         }
     }
 };
