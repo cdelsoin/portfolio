@@ -49,6 +49,16 @@ const styles = {
             fontSize: '5vmin',
             textAlign: 'center'
         }
+    },
+    link: {
+        textDecoration: 'none',
+        color: '#004848',
+        '&:visited': {
+            color: '#004848'
+        },
+        '&:hover': {
+            color: 'teal'
+        }
     }
 };
 
