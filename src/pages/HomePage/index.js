@@ -13,7 +13,10 @@ export function HomePage() {
                     <p css={styles.bioText}>
                         I'm Cliff Delsoin, a software engineer based out of Boston, MA specializing in React and React
                         Native application development. If you'd like to get in touch feel free to reach out via{' '}
-                        <a css={styles.link} href={url}>LinkedIn</a>.
+                        <a css={styles.link} target="_blank" rel="noopener noreferrer" href={url}>
+                            LinkedIn
+                        </a>
+                        .
                     </p>
                 </div>
             </div>
